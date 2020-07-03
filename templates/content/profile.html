@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Lemonade Stand Supply</title>
-<link href="/css/app.css" rel="stylesheet" />
-</head>
-<body>
+{{define "content"}}
 	<header class="row">
 		<div class="columns small-2">
 			<div class="logo-container">
@@ -32,14 +26,14 @@
 							<a href="/shop">Shop</a>
 						</div>
 						<div class="columns small-6 item">
-							<a href="..">Stand Locator</a>
+							<a href="../../..">Stand Locator</a>
 						</div>
 					</div>
 				</nav>
 			</div>
 		</div>
 	</header>
-	<form action=".." method="post" class="row profile">
+	<form action="../../.." method="post" class="row profile">
 		<div class="columns small-8 small-offset-2">
 			<div class="row">
 				<div class="columns small-10 small-offset-2">
@@ -100,6 +94,4 @@
 			</div>
 		</div>
 	</form>
-	{{template "_footer.html"}}
-</body>
-</html>
+{{end}}
